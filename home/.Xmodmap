@@ -1,0 +1,21 @@
+! clear Lock
+! keycode 66 = ISO_Level3_Shift
+! clear mod1
+! keycode  64 =  ISO_Level3_Shift
+keycode  66 =  Mode_switch Mode_switch
+keycode  43 = h H Left Left
+keycode  44 = j J Down Down
+keycode  45 = k K Up Up
+keycode  46 = l L Right Right
+keycode  56 = b B Home
+keycode  26 = e E End
+keycode  40 = d D Delete
+keycode  39 = s S BackSpace
+keycode  58 = m M Menu
+!keycode  57 = n N Return
+keycode  33 = p P XF86Paste
+keycode  54 = c C XF86Copy
+keycode  53 = x X XF86Cut
+keycode  30 = u U Caps_Lock
+!keycode  34 = bracketleft braceleft Next Next
+!keycode  35 = bracketright braceright Prior Prior

@@ -1,0 +1,9 @@
+[user]
+	name = huxos
+	email = hujunu0@gmail.com
+[credential]
+	helper = cache --timeout=3600
+[push]
+	default = simple
+[core]
+	editor = vim

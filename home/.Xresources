@@ -1,0 +1,120 @@
+!reload config xrdb -load .Xresources
+Xcursor.theme: Human
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+
+URxvt.foreground: #D7D0C7
+!URxvt.background: #151515
+!URxvt.background: [60]Black
+! Black
+URxvt.color0: #303030
+URxvt.color8: #404040
+! Red
+URxvt.color1: #E84F4F
+URxvt.color9: #D23D3D
+! Green
+URxvt.color2: #B8D68C
+URxvt.color10: #A0CF5D
+! Yellow
+URxvt.color3: #E1AA5D
+URxvt.color11: #F39D21
+! Blue
+URxvt.color4: #7DC1CF
+URxvt.color12: #4E9FB1
+! Magenta
+URxvt.color5: #9B64FB
+URxvt.color13: #8542FF
+! Cyan
+URxvt.color6: #6D878D
+URxvt.color14: #42717B
+! White
+URxvt.color7: #dddddd
+URxvt.color15: #dddddd
+
+! Scroll set
+URxvt.scrollBar:false
+!URxvt.scrollBar_right:True
+!URxvt.scrollBar_floating:True
+!URxvt.scrollstyle:plain
+!URxvt.scrollWithBuffer:false
+URxvt.saveLines:5000
+
+! Font set
+URxvt.font:xft:Envy Code R:pixelsize=16:style=Regular:antialias=true,xft:WenQuanYi Micro Hei Mono,:pixelsize=13:style=Regular:antialias=true,xft:Symbola monospacified for DejaVu Sans Mono:pixelsize=13:style=Book:antialias=true
+URxvt.boldfont:xft:Envy Code R:pixelsize=16:style=Bold:antialias=true,xft:WenQuanYi Micro Hei Mono,:pixelsize=13:style=Bold:antialias=true,xft:Symbola monospacified for DejaVu Sans Mono:pixelsize=13:style=Book:antialias=true
+
+! Input Method set
+URxvt.inputMethod:fcitx
+!urxvt.cursorUnderline:  true
+!URxvt.imFont:Liberation Mono
+!URxvt.preeditType: Root
+URxvt.preeditType: OverTheSpot
+
+! window geometry set
+URxvt.geometry: 80x30
+URxvt.title:Rxvt-Unicode
+
+URxvt.modifier: alt
+
+! Bg transparent set
+!URxvt.inheritPixmap: true
+!URxvt.tintCddolor: white
+!URxvt.shading: 45
+
+! Tab set
+!URxvt.perl-ext-common: default,tabbed
+!URxvt.tabbed.tab-fg: 12
+!URxvt.tabbed.tab-bg: 0
+!URxvt.tabbed.tabbar-fg: 4
+
+! Ext
+URxvt.perl-lib: /home/hujun/.urxvt/ext/urxvt-perls
+URxvt.perl-ext-common: clipboard,keyboard-select,url-select,font-size,autocomplete-ALL-the-things
+
+! clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd: xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+
+!Keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+!Url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+
+!Font-size
+URxvt.keysym.C-S-I: perl:font-size:increase
+URxvt.keysym.C-S-O: perl:font-size:decrease
+URxvt.keysym.C-S-Up: perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
+
+!Autocomplete
+URxvt.keysym.M-n: perl:aAtt:skeleton-word-complete
+URxvt.keysym.M-p: perl:aAtt:undo
+
+!Combine key
+URxvt.keysym.M-k: \033[A
+URxvt.keysym.M-j: \033[B
+URxvt.keysym.M-l: \033[C
+URxvt.keysym.M-h: \033[D
+URxvt.keysym.M-6: \033[H
+URxvt.keysym.M-4: \033[F
+URxvt.keysym.M-S-K: \033[1;3A
+URxvt.keysym.M-S-J: \033[1;3B
+URxvt.keysym.M-S-L: \033[1;3C
+URxvt.keysym.M-S-H: \033[1;3D
+
+URxvt.depth:32
+URxvt.background:rgba:0000/0000/0000/dddd
+
+!Cursor set
+URxvt.cursorBlink:True
+URxvt.cursorColor: #6D878D
