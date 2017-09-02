@@ -1,0 +1,5 @@
+cafile=/etc/openconnect/ssl/ca.crt
+certificate=/etc/openconnect/ssl/user.crt
+sslkey=/etc/openconnect/ssl/user.key
+script=/etc/openconnect/script/connect.sh
+reconnect-timeout=20s

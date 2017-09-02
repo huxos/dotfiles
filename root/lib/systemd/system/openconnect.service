@@ -1,0 +1,12 @@
+[Unit]
+Description=dhcpcd on all interfaces
+Wants=network.target
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/openconnect --config /etc/openconnect/config s0.huxos.me
+Restart=always
+RestartSec=25
+
+[Install]
+WantedBy=multi-user.target

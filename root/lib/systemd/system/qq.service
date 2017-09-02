@@ -1,0 +1,14 @@
+[Unit]
+Description=腾讯QQ轻聊版 7.9
+
+[Service]
+WorkingDirectory=/opt/QQLight7.9/qq/dosdevices/c:/Program Files (x86)/Tencent/QQLite/Bin
+ExecStart=/opt/QQLight7.9/run.sh
+MemoryMax=1073741824
+Type=forking
+User=hujun
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
